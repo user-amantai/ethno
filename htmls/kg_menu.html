@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Этно-комплекс</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <!-- Favicon -->
+    <link href="/img/favicon.ico" rel="icon">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link href="./lib/animate/animate.min.css" rel="stylesheet">
+    <link href="./lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="./lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <!-- Template Stylesheet -->
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="./htmls/kg_home.html" class="navbar-brand p-0">
+                    <h1 class="text-primary m-0">ЭТНО</h1>
+                    <!-- <img src="/img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a href="./htmls/kg_home.html" class="nav-item nav-link">Башкы бет</a>
+                        <a href="./htmls/kg_about.html" class="nav-item nav-link">Этно-комплекс жөнүндө</a>
+                        <a href="./htmls/kg_service.html" class="nav-item nav-link">Кызмат</a>
+                        <a href="./htmls/kg_menu.html" class="nav-item nav-link active">Меню</a>
+                        <a href="./htmls/kg_contact.html" class="nav-item nav-link">Байланыш</a>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Тилдер
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./htmls/menu.html">RU</a></li>
+                            <li><a class="dropdown-item" href="./htmls/en_menu.html">EN</a></li>
+                            <li><a class="dropdown-item" href="./htmls/kg_menu.html">KG</a></li>
+                        </ul>
+                    </div>
+                    <!-- <a href="" class="btn btn-primary py-2 px-4">Бронировать столик</a> -->
+                </div>
+            </nav>
+
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">Этно-комплекс меню</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center text-uppercase">
+                            <li class="breadcrumb-item"><a href="./htmls/kg_home.html">Башкы бет</a></li>
+                            <li class="breadcrumb-item"><a href="#">Беттер</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Меню</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Menu Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Меню</h5>
+                    <h1 class="mb-5">Эң популярдуу тамактар</h1>
+                </div>
+                <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
+                                <i class="fa fa-coffee fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Популярдуу</small>
+                                    <h6 class="mt-n1 mb-0">Эртең мененки тамак</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
+                                <i class="fa fa-hamburger fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Өзгөчө</small>
+                                    <h6 class="mt-n1 mb-0">Түштөн кийинки чай</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
+                                <i class="fa fa-utensils fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Керемет</small>
+                                    <h6 class="mt-n1 mb-0">Кечки тамак</h6>
+                                </div>
+                            </a>.
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/рисовая каша.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Күрүч боткосу</span>
+                                                <span class="text-primary">115с</span>
+                                            </h5>
+                                            <small class="fst-italic">Сүт кошулган күрүч боткосу балдардын сүйүктүү тамактарынын бири. Жай меште бышырылган ботко абдан назик жана каймактуу болот.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/сырники.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Духовкада сыр пирогтары</span>
+                                                <span class="text-primary">115с</span>
+                                            </h5>
+                                            <small class="fst-italic">Бул рецепт боюнча сыр пирогтары меште бышырылган, алар аз углеводдор гана эмес, ошондой эле глютенсиз, кокос уну жана кантсыз, кето диетага ылайыктуу.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/венские вафли.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Сыр жана жумуртка менен Венский вафли</span>
+                                                <span class="text-primary">115с</span>
+                                            </h5>
+                                            <small class="fst-italic">Вена вафлилери менен сиз эртең мененки тамакка көптөгөн варианттарды таба аласыз. Мен аларды көбүнчө сыр, жумуртка менен бышырып, анан ар дайым ар кандай жолдор менен толуктайм.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/шпинат.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Жумуртка менен шпинат</span>
+                                                <span class="text-primary">115с</span>
+                                            </h5>
+                                            <small class="fst-italic">Көмөч казанга жумуртка кошулган шпинатты даамдуу эртең мененки тамакка бышырууга болот. Бул сарымсактын бир аз жыты бар назик тамак, бирок анын ичинде сарымсак даамы да, даамы да жок.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/панкейки.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Банан куймактары</span>
+                                                <span class="text-primary">115с</span>
+                                            </h5>
+                                            <small class="fst-italic">Бул рецепт боюнча банан куймактары назик, ортосу ачык, орточо таттуу жана эң негизгиси абдан даамдуу.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/сендвич.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Клаб-сэндвич</span>
+                                                <span class="text-primary">115с</span>
+                                            </h5>
+                                            <small class="fst-italic">Клаб-сэндвич - ширелүү пергаментте куурулган тоок филеси, жыпар жыттуу ышталган бекон жана аппетиттүү соус менен татытылган жаңы жашылчалардан турган сэндвич.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/сыр.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Катуу камырдагы сыр</span>
+                                                <span class="text-primary">115с</span>
+                                            </h5>
+                                            <small class="fst-italic">Катуу камырдагы сыр эң сүйүктүү майрамдык закускалардын бири. Бул сырды ар кандай татымалдар менен, ар кандай варианттарда бышырууга болот.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/тыква.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Духовкада козу карын менен ашкабак</span>
+                                                <span class="text-primary">115с</span>
+                                            </h5>
+                                            <small class="fst-italic">Духовкада козу карын кошулган ашкабакты толук эртең мененки тамак катары же түшкү же кечки тамакка эт же балык үчүн гарнир катары бышырууга болот.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/плов_карточка.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Плов</span>
+                                                <span class="text-primary">115с</span>
+                                            </h5>
+                                            <small class="fst-italic">Эт, күрүч, пияз, сабиз жана жыпар жыттуу тамак. Ээси башка улут болсо дагы кайсы майрамда палоо болот. Пловтун 200дөй түрү жана миңге жакын </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/беш-бармак.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Беш бармак</span>
+                                                <span class="text-primary">115с</span>
+                                            </h5>
+                                            <small class="fst-italic">Ал кыргыздарда, казактарда жана башка кээ бир элдерде кеңири таралган, «майда тууралган эт жана камырдан турган, сорпосу менен куюлган» тамакты билдирет.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/куурдак.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Куурдак</span>
+                                                <span class="text-primary">115с</span>
+                                            </h5>
+                                            <small class="fst-italic">Кыргыздардын, казактардын, өзбектердин, карачайлардын жана түркмөндөрдүн салттуу тамагы – эт же ичеги жана пияз.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/манты.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Манты</span>
+                                                <span class="text-primary">115с</span>
+                                            </h5>
+                                            <small class="fst-italic">Үйдөгү жука камырдан жана фарштан жасалган бууда бышырылган салттуу тамак.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/лагман.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Лагман</span>
+                                                <span class="text-primary">115с</span>
+                                            </h5>
+                                            <small class="fst-italic">Эт, жашыл, татымал жана сорпосу менен Борбордук Азия спагетти. Кесме үйдө колго даярдалат.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/шорпо.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Шорпо</span>
+                                                <span class="text-primary">115с</span>
+                                            </h5>
+                                            <small class="fst-italic">Бул абдан майлуу, бай шорпо, анын салттуу негизги компоненти сыяктуу - козу.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/самса.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Самса</span>
+                                                <span class="text-primary">115с</span>
+                                            </h5>
+                                            <small class="fst-italic">Бул бышырылган камыр, көбүнчө катмарлуу, ар кандай начинкалар, биринчи кезекте эт. Самса кыргыздын эң сүйүктүү тамактарынын бири.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/дымдама.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Дымдама</span>
+                                                <span class="text-primary">115с</span>
+                                            </h5>
+                                            <small class="fst-italic">Бул казанга бышырылган жашылча эмес. Капуста, картошка, сабиз, баклажан, калемпир, пияз, сельдерей жана башка көптөгөн жашылчалар тамак даярдоо үчүн колдонулган жашылчаларга кирет.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/борщ.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Борщ</span>
+                                                <span class="text-primary">115с</span>
+                                            </h5>
+                                            <small class="fst-italic">Жаш капуста менен борщ - бул даамдуу, чын жүрөктөн жасалган биринчи тамак.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/чечевица.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Чечевица этсиз</span>
+                                                <span class="text-primary">115с</span>
+                                            </h5>
+                                            <small class="fst-italic">Этсиз даярдалган кызыл жасмык шорпо</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/суп с сыром.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Эриген сыр жана вермишель менен шорпо</span>
+                                                <span class="text-primary">115с</span>
+                                            </h5>
+                                            <small class="fst-italic">Тамак этсиз даярдалган, бирок ал абдан даамдуу, аппетиттүү жана абдан даамдуу болуп чыгат.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/гречневый суп.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Фрикадельки менен гречка шорпо</span>
+                                                <span class="text-primary">115с</span>
+                                            </h5>
+                                            <small class="fst-italic">Абдан жеңил, жыпар жыттуу жана ден-соолукка пайдалуу биринчи тамак. Фельдшерди каалаган фарштан жасоого болот, ал эми кызмат кылууда жаңы чөптөрдү себелет</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/окрошка.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Кефирдеги окрошка</span>
+                                                <span class="text-primary">115с</span>
+                                            </h5>
+                                            <small class="fst-italic">Кефирдеги окрошка жазында абдан даамдуу, жеңил жана сергитет. Бул тамакты колдонуп көрүңүз, сизге сөзсүз жагат!</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="./img/суп с зеленым горошком и яйцом.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Шорпо менен жашыл буурчак жана жумуртка</span>
+                                                <span class="text-primary">115с</span>
+                                            </h5>
+                                            <small class="fst-italic">Жашыл буурчак жана жумурткадан жасалган шорпо жеңил, жетиштүү жана абдан даамдуу биринчи тамак болуп саналат.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menu End -->
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-4 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Компания</h4>
+                        <a class="btn btn-link" href="./htmls/kg_about.html">Этно-комплекс жөнүндө</a>
+                        <a class="btn btn-link" href="./htmls/kg_service.html">Кызмат</a>
+                        <a class="btn btn-link" href="./htmls/kg_menu.html">Меню</a>
+                        <a class="btn btn-link" href="./htmls/kg_contact.html">Байланыш</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Байланыш</h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Чүй проспекти 215, Бишкек, Кыргызстан</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+996 999 55-66-77</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@ethno.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href="https://twitter.com/i/flow/login"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://ru.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Ачуу</h4>
+                        <h5 class="text-light fw-normal">Дүйшөмбү - Ишемби</h5>
+                        <p>09:00 - 21:00</p> <br>
+                        <h5 class="text-light fw-normal">Жекшемби</h5>
+                        <p>10:00 – 20:00</p>
+                    </div>
+                    <!-- <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Новостная рассылка</h4>
+                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p> <br>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control border-primary w-100 py-3 ps-1.5 pe-5" type="text" placeholder="Электронная почта">
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Вход</button>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="./htmls/kg_home.html">ЭТНО</a>, Бардык укуктар корголгон.
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="./htmls/kg_home.html">Башкы</a>
+                                <a href="">Cookies файлдары</a>
+                                <a href="">Жардам</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./lib/wow/wow.min.js"></script>
+    <script src="./lib/easing/easing.min.js"></script>
+    <script src="./lib/waypoints/waypoints.min.js"></script>
+    <script src="./lib/counterup/counterup.min.js"></script>
+    <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="./lib/tempusdominus/js/moment.min.js"></script>
+    <script src="./lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="./lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="./js/main.js"></script>
+
+</html>
