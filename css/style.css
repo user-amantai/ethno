@@ -499,9 +499,12 @@
     height: 244px;
 }
 .alert{
+    max-width: 546px;
+    margin: 16px auto 0;
     display: none;
     background-color: #d1e7dd;
     border-color: #badbcc;
+    margin-bottom: 0;
 }
 .alertShow{
     display: block;
