@@ -495,3 +495,14 @@
 .text_nitro2{
     width: 314px;
 }
+.carousel-height{
+    height: 244px;
+}
+.alert{
+    display: none;
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+}
+.alertShow{
+    display: block;
+}
