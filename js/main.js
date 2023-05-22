@@ -110,26 +110,30 @@
 // }
 
 // форма отправки
-const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
-const appendAlert = (message, type) => {
-    const wrapper = document.createElement('div')
-    wrapper.innerHTML = [
-    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
-    `   <div>${message}</div>`,
-    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-    '</div>'
-    ].join('')
+// const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+// const appendAlert = (message, type) => {
+//     const wrapper = document.createElement('div')
+//     wrapper.innerHTML = [
+//     `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+//     `   <div>${message}</div>`,
+//     '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+//     '</div>'
+//     ].join('')
 
-    alertPlaceholder.append(wrapper)
-}
-const alertTrigger = document.getElementById('liveAlertBtn')
-if (alertTrigger) {
-    alertTrigger.addEventListener('click', () => {
-    appendAlert('Nice, you triggered this alert message!', 'success')
-    })
-}
-const form = document.querySelector('form')
-const btn = document.querySelector('#liveAlertBtn')
-btn.addEventListener('click', () => {
-    form.reset()
+//     alertPlaceholder.append(wrapper)
+// }
+// const alertTrigger = document.getElementById('liveAlertBtn')
+// if (alertTrigger) {
+//     alertTrigger.addEventListener('click', () => {
+//     appendAlert('Nice, you triggered this alert message!', 'success')
+//     })
+// }
+// const form = document.querySelector('form')
+// const btn = document.querySelector('#liveAlertBtn')
+// btn.onclick = () => form.reset()
+
+const alertShow = document.querySelector('.alert_show')
+const sendMessage = document.querySelector('.send_message')
+sendMessage.addEventListener('click', () => {
+    alertShow.classList.add('alertShow')
 })
