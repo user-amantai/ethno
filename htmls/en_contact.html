@@ -9,7 +9,7 @@
     <meta content="" name="description">
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
-    <!-- Google. Web Fonts -->
+    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
@@ -17,13 +17,13 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Libraries Stylesheet -->
-    <link href="../lib/animate/animate.min.css" rel="stylesheet">
-    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="../lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
     <!-- Template Stylesheet -->
-    <link href="../css/style.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -40,7 +40,7 @@
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
-                <a href="../htmls/en_home.html" class="navbar-brand p-0">
+                <a href="/htmls/en_home.html" class="navbar-brand p-0">
                     <h1 class="text-primary m-0">ETHNO</h1>
                     <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
@@ -49,20 +49,20 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0 pe-4">
-                        <a href="../htmls/en_home.html" class="nav-item nav-link">Home</a>
-                        <a href="../htmls/en_about.html" class="nav-item nav-link">About us</a>
-                        <a href="../htmls/en_service.html" class="nav-item nav-link">Services</a>
-                        <a href="../htmls/en_menu.html" class="nav-item nav-link">Menu</a>
-                        <a href="../htmls/en_contact.html" class="nav-item nav-link active">Contacts</a>
+                        <a href="/htmls/en_home.html" class="nav-item nav-link">Home</a>
+                        <a href="/htmls/en_about.html" class="nav-item nav-link">About us</a>
+                        <a href="/htmls/en_service.html" class="nav-item nav-link">Services</a>
+                        <a href="/htmls/en_menu.html" class="nav-item nav-link">Menu</a>
+                        <a href="/htmls/en_contact.html" class="nav-item nav-link active">Contact</a>
                     </div>
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Languages
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="../htmls/contact.html">RU</a></li>
-                            <li><a class="dropdown-item" href="../htmls/en_contact.html">EN</a></li>
-                            <li><a class="dropdown-item" href="../htmls/kg_contact.html">KG</a></li>
+                            <li><a class="dropdown-item" href="/htmls/contact.html">RU</a></li>
+                            <li><a class="dropdown-item" href="/htmls/en_contact.html">EN</a></li>
+                            <li><a class="dropdown-item" href="/htmls/kg_contact.html">KG</a></li>
                         </ul>
                     </div>
                     <!-- <a href="" class="btn btn-primary py-2 px-4">Бронировать столик</a> -->
@@ -74,7 +74,7 @@
                     <h1 class="display-3 text-white mb-3 animated slideInDown">Contacts</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center text-uppercase">
-                            <li class="breadcrumb-item"><a href="../htmls/en_home.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="/htmls/en_home.html">Home</a></li>
                             <li class="breadcrumb-item"><a href="#">Pages</a></li>
                             <li class="breadcrumb-item text-white active" aria-current="page">Contacts</li>
                         </ol>
@@ -143,9 +143,13 @@
                                             <label for="message">Message</label>
                                         </div>
                                     </div>
+                                    <div class="alert alert-${type} alert-dismissible alert_show" role="alert">
+                                        <div>Your order has been processed, please wait for a call!</div>
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>
                                     <div class="col-12">
                                         <div id="liveAlertPlaceholder"></div>
-                                        <button class="btn btn-primary w-100 py-3" type="button" id="liveAlertBtn">Send a message</button>
+                                        <button class="btn btn-primary w-100 py-3 send_message" type="button" id="liveAlertBtn">Send a message</button>
                                     </div>
                                 </div>
                             </form>
@@ -163,10 +167,10 @@
                 <div class="row g-5">
                     <div class="col-lg-4 col-md-6">
                         <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
-                        <a class="btn btn-link" href="../htmls/en_about.html">About us</a>
-                        <a class="btn btn-link" href="../htmls/en_service.html">Services</a>
-                        <a class="btn btn-link" href="../htmls/en_menu.html">Menu</a>
-                        <a class="btn btn-link" href="../htmls/en_contact.html">Contacts</a>
+                        <a class="btn btn-link" href="/htmls/en_about.html">About us</a>
+                        <a class="btn btn-link" href="/htmls/en_service.html">Services</a>
+                        <a class="btn btn-link" href="/htmls/en_menu.html">Menu</a>
+                        <a class="btn btn-link" href="/htmls/en_contact.html">Contacts</a>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contacts</h4>
@@ -201,7 +205,7 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="../htmls/en_home.html">ETHNO</a>, All Right Reserved.
+                            &copy; <a class="border-bottom" href="/htmls/en_home.html">ETHNO</a>, All Right Reserved.
                         </div>
                     </div>
                 </div>
@@ -217,17 +221,17 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../lib/wow/wow.min.js"></script>
-    <script src="../lib/easing/easing.min.js"></script>
-    <script src="../lib/waypoints/waypoints.min.js"></script>
-    <script src="../lib/counterup/counterup.min.js"></script>
-    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="../lib/tempusdominus/js/moment.min.js"></script>
-    <script src="../lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="../lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="/lib/wow/wow.min.js"></script>
+    <script src="/lib/easing/easing.min.js"></script>
+    <script src="/lib/waypoints/waypoints.min.js"></script>
+    <script src="/lib/counterup/counterup.min.js"></script>
+    <script src="/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="/lib/tempusdominus/js/moment.min.js"></script>
+    <script src="/lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="../js/main.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>
