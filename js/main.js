@@ -132,8 +132,8 @@
 // const btn = document.querySelector('#liveAlertBtn')
 // btn.onclick = () => form.reset()
 
-const alertShow = document.querySelector('.alert_show')
-const sendMessage = document.querySelector('.send_message')
+const alertHide = document.querySelector('.alertHide')
+const sendMessage = document.querySelector('.sendMessage')
 sendMessage.addEventListener('click', () => {
-    alertShow.classList.add('alertShow')
+    alertHide.classList.add('alertShow')
 })
