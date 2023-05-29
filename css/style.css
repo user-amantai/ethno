@@ -498,3 +498,14 @@
 .carousel-height{
     height: 244px;
 }
+.alert_show{
+    display: none;
+}
+.alertShow{
+    max-width: 546px;
+    margin: 16px auto 0;
+    display: block;
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+    margin-bottom: 0;
+}
