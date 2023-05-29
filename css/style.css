@@ -498,7 +498,7 @@
 .carousel-height{
     height: 244px;
 }
-.alert_show{
+.alertHide{
     display: none;
 }
 .alertShow{
